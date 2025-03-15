@@ -7,17 +7,26 @@ export default function ContentArchive() {
       title: "First Content",
       description: "This is the first content",
       tags: ["first", "content"],
+      image: "/img/gaimg.jpg",
+      actions: [
+        {
+          label: "View",
+          href: "/content/2",
+          type: "outline",
+        },
+      ],
     },
     {
       id: 2,
       title: "Bjørn laver den dumme",
       description: "Ehh jeg kan ikke tro han kunne gøre det",
       tags: ["second", "content"],
+      image: "/img/gaimg.jpg",
       actions: [
         {
           label: "View",
           href: "/content/2",
-          type: "primary",
+          type: "outline",
         },
       ],
     },
@@ -26,14 +35,21 @@ export default function ContentArchive() {
       title: "Second Content",
       description: "This is the second content",
       tags: ["second", "content"],
+      image: "/img/gaimg.jpg",
+      actions: [
+        {
+          label: "View",
+          href: "/content/2",
+          type: "primary",
+        },
+      ],
     },
   ];
 
   return (
     <>
       <div className="w-full flex justify-between">
-        <h2>Content Archive</h2>
-        <p>Find everything from the boys here.</p>
+        <h2>The Content</h2>
       </div>
       <ContentGrid items={items} />
     </>
